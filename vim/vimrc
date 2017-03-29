@@ -1,0 +1,20 @@
+set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+
+let $VIMHOME = $XDG_CONFIG_HOME."/vim/"
+
+" Pathegen
+runtime! autoload/pathogen.vim
+if exists("*pathogen#infect")
+    execute pathogen#infect()
+    execute pathogen#helptags()
+endif
+
+" Individual configurations
+source $VIMHOME/config/environment.vim
+source $VIMHOME/config/general.vim
+source $VIMHOME/config/autocmds.vim
+source $VIMHOME/config/interface.vim
+source $VIMHOME/config/colours.vim
+source $VIMHOME/config/text.vim
+source $VIMHOME/config/statusline.vim
+source $VIMHOME/config/misc.vim

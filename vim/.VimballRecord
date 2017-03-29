@@ -1,0 +1,1 @@
+Colorizer.vmb: call delete('/home/grogoreo/.config/vim/plugin/ColorizerPlugin.vim')|call delete('/home/grogoreo/.config/vim/doc/Colorizer.txt')|call delete('/home/grogoreo/.config/vim/autoload/Colorizer.vim')
